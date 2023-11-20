@@ -1,2 +1,2 @@
-# ecoforecast_2023
+# Ecoforecast Challenge 2023
 EcoForecast: Revolutionizing Green Energy Surplus Prediction in Europe
