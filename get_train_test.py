@@ -14,8 +14,6 @@ test_data.reset_index(drop=True, inplace=True)
 
 if 'Unnamed: 0' in train_data.columns:  train_data = train_data.drop('Unnamed: 0', axis=1)
 if 'Unnamed: 0' in test_data.columns:   test_data = test_data.drop('Unnamed: 0', axis=1)
-if 'country_code' in test_data.columns: test_data = test_data.drop('country_code', axis=1)
-if 'country_num' in test_data.columns:  test_data = test_data.drop('country_num', axis=1)
 
 print(train_data)
 print(test_data)
