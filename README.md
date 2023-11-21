@@ -31,6 +31,8 @@ B. Use the bash script:
 chmod +x scripts/run_pipeline.sh
 ./scripts/run_pipeline.sh
 ```
+**Note**: on the _*run_pipline.sh*_ script there's a commented flags on the 4th line that can be uncommented for the execution to reaload all the data again from the server.
+
 > Note that some plot will be appearing during the execution, you can look at them to see how the model performs.
 > The results of the predictions will be stored on the [predictions](./predictions/) folder and the models on the [models](./models/) folder.
 
