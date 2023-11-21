@@ -9,6 +9,11 @@ Since we don't receive the data directly neither for doing the predictions, we r
 
 ### Run the model yourself
 
+- Download the repo
+```
+git clone https://github.com/miquelt9/ecoforecast_2023
+```
+
 - Depending on your PC you might need to do it in a virtual environment (I personally had to):
 ```
 python -m venv path/to/venv
