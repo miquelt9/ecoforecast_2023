@@ -3,10 +3,27 @@ import numpy as np
 import os
 from pytz import timezone
 from utils import get_gen_data_from_entsoe, get_load_data_from_entsoe, perform_get_request, xml_to_load_dataframe, xml_to_gen_data
+import argparse
 
 RELOAD_L = False
 RELOAD_G = False
 DEBUG = False
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument("--update_load", action="store_true", help="Set flag_a to False")
+parser.add_argument("--update_gen", action="store_true", help="Set flag_a to False")
+
+args = parser.parse_args()
+
+flag_load = args.update_load
+flag_gen = args.update_gen
+
+if flag_load:
+    RELOAD_L = True
+
+if flag_gen:
+    RELOAD_G = True
 
 def most_surplus(l_sp, g_sp, l_uk, g_uk, l_de, g_de, l_dk, g_dk, l_hu, g_hu, l_se, g_se, l_it, g_it, l_po, g_po, l_nl, g_nl):
     diffs = {}
