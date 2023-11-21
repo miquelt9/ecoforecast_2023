@@ -20,7 +20,18 @@ pip install -r requirements.txt
 ```
 **Note**: that all the exections must be done from the main folder in order for them to work properly.
 - After you can:
-A. Run one by one the files in the [src](.src/) folder:
+A. Run one by one the files in the [src](./src/) folder:
 ```
+python3 src/get_data.py
+python3 src/get_train_test.py
+python3 src/model_train_predict.py
+```
+B. Use the bash script:
+```
+chmod +x scripts/run_pipeline.sh
+./scripts/run_pipeline.sh
+```
+> Note that some plot will be appearing during the execution, you can look at them to see how the model performs.
+> The results of the predictions will be stored on the [predictions](./predictions/) folder and the models on the [models](./models/) folder.
 
-```
+You can as well run it online on a prepared [Google Colab](https://colab.research.google.com/drive/1ROKeqyYTzW2muFEA1-dAsgBHwFxoVSh8?usp=sharing).
