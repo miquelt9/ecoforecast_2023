@@ -51,8 +51,8 @@ After seeing the evaluation values of the polynomial model, in any degree is wor
 
 ![](./images/rft_heatmap.png)
 
-The final values regarding the metrics of our predictions compared to ground truth are the following:
-Accuracy: 0.9994295493439818
-Precision: 0.9977298524404086
-Recall: 0.9994314951677089
-F1 Score: 0.9985799488781595
+The final values regarding the metrics of our predictions compared to ground truth are the following:   
+Accuracy: 0.9994295493439818    
+Precision: 0.9977298524404086    
+Recall: 0.9994314951677089    
+F1 Score: 0.9985799488781595    
