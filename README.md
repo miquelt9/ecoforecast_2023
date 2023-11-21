@@ -37,3 +37,8 @@ chmod +x scripts/run_pipeline.sh
 > The results of the predictions will be stored on the [predictions](./predictions/) folder and the models on the [models](./models/) folder.
 
 You can as well run it online on a prepared [Google Colab](https://colab.research.google.com/drive/1ROKeqyYTzW2muFEA1-dAsgBHwFxoVSh8?usp=sharing).
+
+### Results
+
+After seeing the evaluation values of the polynomial model, in any degree is worst that in the random forest predictor, we ended up by deciding to use this last one for predicting the final values. Indeed what we are predicting is the load and generation of energy for each country on a specific hour. Then a deterministic algorithm decides which country is the one with the most surplus.
+
