@@ -42,3 +42,12 @@ You can as well run it online on a prepared [Google Colab](https://colab.researc
 
 After seeing the evaluation values of the polynomial model, in any degree is worst that in the random forest predictor, we ended up by deciding to use this last one for predicting the final values. Indeed what we are predicting is the load and generation of energy for each country on a specific hour. Then a deterministic algorithm decides which country is the one with the most surplus.
 
+![](./images/pol_predictor.png)
+
+![](./images/rft_heatmap.png)
+
+The final values regarding the metrics of our predictions compared to ground truth are the following:
+Accuracy: 0.9994295493439818
+Precision: 0.9977298524404086
+Recall: 0.9994314951677089
+F1 Score: 0.9985799488781595
