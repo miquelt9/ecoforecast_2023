@@ -45,6 +45,10 @@ You can as well run it online on a prepared [Google Colab](https://colab.researc
 
 ### Results
 
+If we look at the data we will quickly realize that on our list there's a country that is always above in terms of absolute surplus of green energy production, as we can see in the plot below:
+
+![](./images/surplus_x_day.png)
+
 After seeing the evaluation values of the polynomial model, in any degree is worst that in the random forest predictor, we ended up by deciding to use this last one for predicting the final values. Indeed what we are predicting is the load and generation of energy for each country on a specific hour. Then a deterministic algorithm decides which country is the one with the most surplus.
 
 ![](./images/pol_predictor.png)
