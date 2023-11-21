@@ -26,6 +26,7 @@ The solution must not only align with Schneider Electric's ethos but also go bey
 
 # Import libraries
 ## Basic libs
+import json
 import pandas as pd
 import numpy as np
 import warnings
@@ -127,7 +128,7 @@ Training the model and getting results
 X = np.array(features).reshape(m,1)
 y = np.array(labels).astype(float)
 
-## define a list of values for polynomial degrees
+# define a list of values for polynomial degrees
 degrees = [2, 3, 5, 7, 10]
 
 # declare a variable to store the resulting training errors for each polynomial␣
@@ -349,5 +350,7 @@ print('Recall:', eval['rec'])
 print('F1 Score:', eval['f1'])
 
 df.to_csv('./predictions/energy_predictions.csv', index=False)
-predictions = df['country_num']
+predictions = df['country_num'].astype(int).to_frame()
+predictions.rename(columns={'country_num': 'target'}, inplace=True)
+
 predictions.to_json('./predictions/predictions.json')
